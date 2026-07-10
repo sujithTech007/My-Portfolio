@@ -85,7 +85,7 @@ export default function Hero() {
           </motion.a>
           
           <motion.a 
-            href="https://github.com/" 
+            href="https://github.com/sujithTech007" 
             target="_blank"
             rel="noopener noreferrer"
             className={styles.socialBtn}
