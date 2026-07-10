@@ -210,9 +210,55 @@
 @media (max-width: 1024px) {
   .hero {
     flex-direction: column;
-    padding: 2rem;
+    padding: 2rem 2rem;
+    gap: 3rem;
   }
   .rightContent {
     grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero {
+    padding: 2rem 1rem;
+    gap: 2rem;
+  }
+  .heading {
+    font-size: 3.5rem;
+    letter-spacing: -1px;
+  }
+  .description {
+    font-size: 1rem;
+  }
+  .leftContent {
+    gap: 1.5rem;
+  }
+  .framerImageContainer {
+    height: 200px;
+  }
+  .brandsCard {
+    padding: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .heading {
+    font-size: 2.8rem;
+  }
+  .socialIcon {
+    height: 50px;
+  }
+  .contactBtn {
+    width: 100%;
+    text-align: center;
+  }
+  .badges {
+    position: relative;
+    bottom: 0;
+    left: 0;
+    margin-top: 1rem;
+  }
+  .expertBadge, .rateBadge {
+    width: max-content;
   }
 }

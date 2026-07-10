@@ -81,7 +81,24 @@
 
 @media (max-width: 768px) {
   .navbar {
-    padding: 1rem 1.5rem;
-    margin: 1rem;
+    padding: 1rem;
+    margin: 0.5rem;
+    border-radius: 15px;
+  }
+  .navLinks {
+    display: none;
+  }
+  .logoContainer span {
+    display: none;
+  }
+  .bookBtn {
+    padding: 0.6rem 1rem;
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .themeToggle {
+    padding: 0.3rem;
   }
 }

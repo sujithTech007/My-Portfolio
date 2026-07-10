@@ -121,8 +121,43 @@
   .workSection {
     flex-direction: column;
     padding: 4rem 2rem;
+    gap: 3rem;
   }
   .imageContainer {
     height: 300px;
+  }
+}
+
+@media (max-width: 768px) {
+  .workSection {
+    padding: 3rem 1rem;
+    gap: 2rem;
+  }
+  .sectionTitle {
+    font-size: 3rem;
+    letter-spacing: -1px;
+  }
+  .workCard {
+    padding: 1rem;
+  }
+  .imageContainer {
+    height: 250px;
+  }
+}
+
+@media (max-width: 480px) {
+  .sectionTitle {
+    font-size: 2.5rem;
+  }
+  .imageContainer {
+    height: 200px;
+  }
+  .workHeader {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+  .tags {
+    flex-wrap: wrap;
   }
 }
