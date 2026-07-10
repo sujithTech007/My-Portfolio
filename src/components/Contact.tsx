@@ -2,7 +2,7 @@
 
 import styles from "./Contact.module.css";
 import { motion } from "framer-motion";
-import { Mail, Phone, MapPin } from "lucide-react";
+import { Mail, Phone, MapPin, Github, Linkedin } from "lucide-react";
 
 export default function Contact() {
   return (
@@ -46,6 +46,37 @@ export default function Contact() {
           <MapPin size={20} />
           <span>Thanjavur, Tamil Nadu</span>
         </div>
+      </motion.div>
+
+      <motion.div
+        className={styles.socialInfo}
+        initial={{ opacity: 0, y: 30 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.6, delay: 0.6 }}
+      >
+        <motion.a 
+          href="https://linkedin.com/" 
+          target="_blank"
+          rel="noopener noreferrer"
+          className={styles.socialContactBtn}
+          whileHover={{ scale: 1.1, rotate: -5 }}
+          whileTap={{ scale: 0.95 }}
+          transition={{ type: "spring", stiffness: 400, damping: 10 }}
+        >
+          <Linkedin size={24} />
+        </motion.a>
+        <motion.a 
+          href="https://github.com/" 
+          target="_blank"
+          rel="noopener noreferrer"
+          className={styles.socialContactBtn}
+          whileHover={{ scale: 1.1, y: -5 }}
+          whileTap={{ scale: 0.95 }}
+          transition={{ type: "spring", stiffness: 400, damping: 10 }}
+        >
+          <Github size={24} />
+        </motion.a>
       </motion.div>
     </section>
   );

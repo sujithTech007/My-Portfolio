@@ -184,27 +184,32 @@
   opacity: 0.9;
 }
 
-.socialGrid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 1rem;
+.socialLinks {
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--card-bg);
+  border-radius: 30px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
 }
 
-.socialIcon {
-  background-color: white;
+.socialBtn {
+  background-color: var(--background);
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
   height: 60px;
-  width: 100%;
-  color: var(--foreground);
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.03);
-  transition: transform 0.2s ease;
+  width: 60px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+  cursor: pointer;
+  transition: box-shadow 0.3s ease;
 }
 
-.socialIcon:hover {
-  transform: translateY(-5px);
+.socialBtn:hover {
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
 }
 
 @media (max-width: 1024px) {
@@ -245,8 +250,9 @@
   .heading {
     font-size: 2.8rem;
   }
-  .socialIcon {
+  .socialBtn {
     height: 50px;
+    width: 50px;
   }
   .contactBtn {
     width: 100%;

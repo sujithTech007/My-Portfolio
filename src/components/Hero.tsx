@@ -3,7 +3,7 @@
 import styles from "./Hero.module.css";
 import { motion } from "framer-motion";
 import Image from "next/image";
-import { PenTool, Briefcase, MessageCircle, Globe, Camera, Code, Hexagon, Triangle, Circle, Award } from "lucide-react";
+import { PenTool, Briefcase, MessageCircle, Globe, Camera, Code, Hexagon, Triangle, Circle, Award, Github, Linkedin } from "lucide-react";
 
 export default function Hero() {
   return (
@@ -70,13 +70,30 @@ export default function Hero() {
           </div>
         </div>
 
-        <div className={styles.socialGrid}>
-          <a href="#" className={styles.socialIcon}><Code color="#F24E1E" /></a>
-          <a href="#" className={styles.socialIcon}><Briefcase color="#0A66C2" /></a>
-          <a href="#" className={styles.socialIcon}><Globe color="#EA4C89" /></a>
-          <a href="#" className={styles.socialIcon}><MessageCircle color="#1DA1F2" /></a>
-          <a href="#" className={styles.socialIcon}><Code color="#333" /></a>
-          <a href="#" className={styles.socialIcon}><Camera color="#E1306C" /></a>
+        <div className={styles.socialLinks}>
+          <motion.a 
+            href="https://linkedin.com/" 
+            target="_blank"
+            rel="noopener noreferrer"
+            className={styles.socialBtn}
+            whileHover={{ scale: 1.1, rotate: 5 }}
+            whileTap={{ scale: 0.95 }}
+            transition={{ type: "spring", stiffness: 400, damping: 10 }}
+          >
+            <Linkedin color="#0A66C2" size={28} />
+          </motion.a>
+          
+          <motion.a 
+            href="https://github.com/" 
+            target="_blank"
+            rel="noopener noreferrer"
+            className={styles.socialBtn}
+            whileHover={{ scale: 1.1, y: -5 }}
+            whileTap={{ scale: 0.95 }}
+            transition={{ type: "spring", stiffness: 400, damping: 10 }}
+          >
+            <Github color="var(--foreground)" size={28} />
+          </motion.a>
         </div>
       </motion.div>
     </section>
