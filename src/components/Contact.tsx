@@ -2,7 +2,8 @@
 
 import styles from "./Contact.module.css";
 import { motion } from "framer-motion";
-import { Mail, Phone, MapPin, Github, Linkedin } from "lucide-react";
+import { Mail, Phone, MapPin } from "lucide-react";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
 
 export default function Contact() {
   return (
@@ -64,7 +65,7 @@ export default function Contact() {
           whileTap={{ scale: 0.95 }}
           transition={{ type: "spring", stiffness: 400, damping: 10 }}
         >
-          <Linkedin size={24} />
+          <FaLinkedin size={24} />
         </motion.a>
         <motion.a 
           href="https://github.com/" 
@@ -75,7 +76,7 @@ export default function Contact() {
           whileTap={{ scale: 0.95 }}
           transition={{ type: "spring", stiffness: 400, damping: 10 }}
         >
-          <Github size={24} />
+          <FaGithub size={24} />
         </motion.a>
       </motion.div>
     </section>

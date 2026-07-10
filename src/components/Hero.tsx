@@ -3,7 +3,8 @@
 import styles from "./Hero.module.css";
 import { motion } from "framer-motion";
 import Image from "next/image";
-import { PenTool, Briefcase, MessageCircle, Globe, Camera, Code, Hexagon, Triangle, Circle, Award, Github, Linkedin } from "lucide-react";
+import { PenTool, Briefcase, MessageCircle, Globe, Camera, Code, Hexagon, Triangle, Circle, Award } from "lucide-react";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
 
 export default function Hero() {
   return (
@@ -80,7 +81,7 @@ export default function Hero() {
             whileTap={{ scale: 0.95 }}
             transition={{ type: "spring", stiffness: 400, damping: 10 }}
           >
-            <Linkedin color="#0A66C2" size={28} />
+            <FaLinkedin color="#0A66C2" size={28} />
           </motion.a>
           
           <motion.a 
@@ -92,7 +93,7 @@ export default function Hero() {
             whileTap={{ scale: 0.95 }}
             transition={{ type: "spring", stiffness: 400, damping: 10 }}
           >
-            <Github color="var(--foreground)" size={28} />
+            <FaGithub color="var(--foreground)" size={28} />
           </motion.a>
         </div>
       </motion.div>
