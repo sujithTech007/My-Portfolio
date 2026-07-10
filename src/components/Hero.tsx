@@ -44,7 +44,7 @@ export default function Hero() {
             <p>Tamil Nadu, India</p>
           </div>
           <div className={styles.framerImageContainer}>
-            <Image src="/framer-mockup.png" alt="Framer mockup" fill />
+            <Image src="/ml-model.png" alt="Machine Learning Model Visualization" fill />
           </div>
           <div className={styles.badges}>
             <div className={styles.expertBadge}>
