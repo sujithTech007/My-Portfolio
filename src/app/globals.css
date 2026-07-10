@@ -1,0 +1,58 @@
+:root {
+  --background: #f9f9f9;
+  --foreground: #111111;
+  --card-bg: #ffffff;
+  --accent: #2ab6b6;
+  --mission-bg: #159e9e;
+  --purple-gradient: linear-gradient(135deg, #a689ff, #d2a4ff);
+  --border-color: #eaeaea;
+  --text-muted: #666666;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not(.light) {
+    --background: #111111;
+    --foreground: #f9f9f9;
+    --card-bg: #1a1a1a;
+    --border-color: #333333;
+    --text-muted: #a0a0a0;
+  }
+}
+
+.dark {
+  --background: #111111;
+  --foreground: #f9f9f9;
+  --card-bg: #1a1a1a;
+  --border-color: #333333;
+  --text-muted: #a0a0a0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  overflow-x: hidden;
+  line-height: 1.5;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  background: none;
+  font-family: inherit;
+}

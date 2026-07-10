@@ -1,0 +1,82 @@
+.eduSection {
+  padding: 6rem 4rem;
+  display: flex;
+  gap: 4rem;
+}
+
+.sectionTitle {
+  flex: 0.4;
+  font-size: 4rem;
+  font-weight: 600;
+  line-height: 1.1;
+  letter-spacing: -1.5px;
+}
+
+.timelineGrid {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.timelineBlock {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.blockTitle {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--accent);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.item {
+  background-color: var(--card-bg);
+  padding: 2rem;
+  border-radius: 20px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.03);
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  border-left: 4px solid var(--accent);
+}
+
+.itemHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.itemHeader h3 {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.year {
+  color: var(--text-muted);
+  font-weight: 500;
+  font-size: 0.9rem;
+  white-space: nowrap;
+}
+
+.subtitle {
+  font-weight: 500;
+  color: var(--text-muted);
+}
+
+.desc {
+  color: var(--text-muted);
+  font-size: 0.95rem;
+  line-height: 1.5;
+  margin-top: 0.5rem;
+}
+
+@media (max-width: 1024px) {
+  .eduSection {
+    flex-direction: column;
+    padding: 4rem 2rem;
+  }
+}

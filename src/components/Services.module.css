@@ -1,0 +1,90 @@
+.servicesSection {
+  padding: 6rem 4rem;
+  display: flex;
+  gap: 4rem;
+}
+
+.sectionTitle {
+  flex: 0.4;
+  font-size: 4rem;
+  font-weight: 600;
+  line-height: 1.1;
+  letter-spacing: -1.5px;
+}
+
+.cardsGrid {
+  flex: 1;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+}
+
+.serviceCard {
+  background-color: var(--card-bg);
+  border-radius: 30px;
+  padding: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 250px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.03);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.serviceCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 50px rgba(0, 0, 0, 0.06);
+}
+
+.cardHeader {
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+}
+
+.iconWrapper {
+  background-color: #f0f4ff;
+  color: #5c6bc0;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.cardDesc {
+  color: var(--text-muted);
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+.cardFooter {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-top: 2rem;
+}
+
+.cardFooter h3 {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.cardNumber {
+  color: var(--text-muted);
+  font-size: 1.2rem;
+  font-weight: 500;
+  opacity: 0.5;
+}
+
+@media (max-width: 1024px) {
+  .servicesSection {
+    flex-direction: column;
+    padding: 4rem 2rem;
+  }
+  .cardsGrid {
+    grid-template-columns: 1fr;
+  }
+}
