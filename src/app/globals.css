@@ -2,6 +2,7 @@
   --background: #f9f9f9;
   --foreground: #111111;
   --card-bg: #ffffff;
+  --card-bg-rgb: 255, 255, 255;
   --accent: #2ab6b6;
   --mission-bg: #159e9e;
   --purple-gradient: linear-gradient(135deg, #a689ff, #d2a4ff);
@@ -14,6 +15,7 @@
     --background: #111111;
     --foreground: #f9f9f9;
     --card-bg: #1a1a1a;
+    --card-bg-rgb: 26, 26, 26;
     --border-color: #333333;
     --text-muted: #a0a0a0;
   }
@@ -23,6 +25,7 @@
   --background: #111111;
   --foreground: #f9f9f9;
   --card-bg: #1a1a1a;
+  --card-bg-rgb: 26, 26, 26;
   --border-color: #333333;
   --text-muted: #a0a0a0;
 }

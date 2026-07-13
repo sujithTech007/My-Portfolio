@@ -30,7 +30,10 @@ export default function Hero() {
           I am a B.Tech student specializing in Artificial Intelligence and Machine Learning, with a passion for problem-solving and full-stack web development.
         </p>
 
-        <button className={styles.contactBtn}>Contact Me</button>
+        <div className={styles.buttonGroup}>
+          <button className={styles.contactBtn}>Contact Me</button>
+          <a href="/resume.pdf" target="_blank" className={styles.resumeBtn}>Download Resume</a>
+        </div>
       </motion.div>
 
       <motion.div

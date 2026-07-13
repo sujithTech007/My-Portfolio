@@ -56,19 +56,48 @@
   line-height: 1.6;
 }
 
+.buttonGroup {
+  display: flex;
+  gap: 1rem;
+}
+
 .contactBtn {
   background-color: var(--foreground);
   color: var(--background);
-  padding: 1rem 2rem;
+  padding: 1rem 2.5rem;
   border-radius: 30px;
-  font-weight: 600;
+  border: none;
   font-size: 1.1rem;
-  width: max-content;
-  transition: transform 0.2s ease;
+  font-weight: 500;
+  cursor: pointer;
+  transition: transform 0.2s ease, opacity 0.2s ease;
 }
 
 .contactBtn:hover {
-  transform: scale(1.05);
+  transform: translateY(-3px);
+  opacity: 0.9;
+}
+
+.resumeBtn {
+  background-color: transparent;
+  color: var(--foreground);
+  padding: 1rem 2.5rem;
+  border-radius: 30px;
+  border: 2px solid var(--foreground);
+  font-size: 1.1rem;
+  font-weight: 500;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease;
+}
+
+.resumeBtn:hover {
+  background-color: var(--foreground);
+  color: var(--background);
+  transform: translateY(-3px);
 }
 
 .rightContent {
