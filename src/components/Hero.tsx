@@ -31,7 +31,6 @@ export default function Hero() {
         </p>
 
         <div className={styles.buttonGroup}>
-          <button className={styles.contactBtn}>Contact Me</button>
           <a href="/resume.pdf" target="_blank" className={styles.resumeBtn}>Download Resume</a>
         </div>
       </motion.div>
