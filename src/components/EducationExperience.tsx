@@ -76,6 +76,25 @@ export default function EducationExperience() {
           </div>
         </motion.div>
 
+        <motion.div 
+          className={styles.timelineBlock}
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: "-50px" }}
+          transition={{ duration: 0.5, delay: 0.3 }}
+        >
+          <h3 className={styles.blockTitle}>Projects</h3>
+          
+          <div className={styles.item}>
+            <div className={styles.itemHeader}>
+              <h3>Prop Firm Challenge Analyzer</h3>
+            </div>
+            <p className={styles.desc}>
+              Developed a full-stack web application that analyzes historical trading data, simulates proprietary trading firm challenge rules, calculates trader readiness scores, and provides AI-powered risk management recommendations through an interactive analytics dashboard.
+            </p>
+          </div>
+        </motion.div>
+
       </div>
     </section>
   );
