@@ -61,7 +61,7 @@ export default function Hero() {
         </div>
 
         <div className={styles.profileImageContainer}>
-          <Image src="/profile.png" alt="Profile" fill />
+          <Image src="/profile.jpg" alt="Profile" fill />
         </div>
 
         <div className={styles.brandsCard}>
@@ -75,7 +75,7 @@ export default function Hero() {
 
         <div className={styles.socialLinks}>
           <motion.a 
-            href="https://linkedin.com/" 
+            href="https://www.linkedin.com/in/sujith-suresh-b995373aa?utm_source=share_via&utm_content=profile&utm_medium=member_android" 
             target="_blank"
             rel="noopener noreferrer"
             className={styles.socialBtn}

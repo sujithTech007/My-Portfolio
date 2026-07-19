@@ -57,7 +57,7 @@ export default function Contact() {
         transition={{ duration: 0.6, delay: 0.6 }}
       >
         <motion.a 
-          href="https://linkedin.com/" 
+          href="https://www.linkedin.com/in/sujith-suresh-b995373aa?utm_source=share_via&utm_content=profile&utm_medium=member_android" 
           target="_blank"
           rel="noopener noreferrer"
           className={styles.socialContactBtn}

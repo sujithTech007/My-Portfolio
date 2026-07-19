@@ -19,7 +19,7 @@ export default function Footer() {
         </div>
         <div className={styles.footerRight}>
           <a
-            href="https://linkedin.com/"
+            href="https://www.linkedin.com/in/sujith-suresh-b995373aa?utm_source=share_via&utm_content=profile&utm_medium=member_android"
             target="_blank"
             rel="noopener noreferrer"
             className={styles.socialLink}
